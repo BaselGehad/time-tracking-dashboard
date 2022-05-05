@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+}
+.content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+.content :nth-child(1) {
+  grid-area: 1 / 1 / 3 / 1;
+}
+.personal {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+.personal .info {
+  padding: 20px;
+  background-color: hsl(235, 37%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 15px;
+  height: 65%;
+}
+.personal .info img {
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.personal .info .name {
+  margin: 20px 1px;
+}
+.personal .info .name div {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(236, 100%, 87%);
+}
+.personal .info .name p {
+  color: hsla(236, 100%, 87%, 0.7);
+  font-size: 18px;
+}
+.personal ul {
+  padding: 20px;
+  list-style: none;
+  color: hsla(236, 100%, 87%, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.personal ul li {
+  padding: 10px;
+}
+.personal ul li:hover {
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card .bkgrnd {
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: -35px;
+  overflow: hidden;
+  height: 75px;
+}
+.content :nth-child(2) .bkgrnd {
+  background-color: hsl(15, 100%, 70%);
+}
+.content :nth-child(3) .bkgrnd {
+  background-color: hsl(195, 74%, 62%);
+}
+.content :nth-child(4) .bkgrnd {
+  background-color: hsl(348, 100%, 68%);
+}
+.content :nth-child(5) .bkgrnd {
+  background-color: hsl(145, 58%, 55%);
+}
+.content :nth-child(6) .bkgrnd {
+  background-color: hsl(264, 64%, 52%);
+}
+.content :nth-child(7) .bkgrnd {
+  background-color: hsl(43, 84%, 65%);
+}
+.card .bkgrnd img {
+  width: auto;
+  height: auto;
+  padding-right: 20px;
+  margin-top: -10px;
+}
+.card .info {
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  height: 100%;
+}
+.card .info:hover {
+  background-color: hsl(236, 44%, 32%);
+  cursor: pointer;
+}
+.card .info .type {
+  display: flex;
+  justify-content: space-between;
+}
+.card .info .type p {
+  color: hsl(236, 100%, 87%);
+  font-size: 18px;
+  font-weight: bolder;
+}
+.card .info .type ul {
+  display: flex;
+  color: hsla(236, 100%, 87%, 0.7);
+  gap: 8px;
+}
+.card .info .type ul:hover {
+  color: hsla(236, 100%, 87%);
+  cursor: pointer;
+}
+.card .info .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card .info .hours div {
+  color: hsl(236, 100%, 87%);
+  font-size: 50px;
+  margin-top: 20px;
+}
+.card .info .hours p {
+  color: hsla(236, 100%, 87%, 0.5);
+  font-size: 18px;
+  margin-top: 5px;
+}
+@media (max-width: 730px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .content .personal .info {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .content .personal .info img {
+    margin-right: 30px;
+  }
+  .content .personal .info .name div {
+    font-size: 22px;
+  }
+  .content .personal ul {
+    flex-direction: row;
+  }
+  .card .info .hours {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
