@@ -178,4 +178,7 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  .card .info .hours div {
+  font-size: 18px;
+}
 }
