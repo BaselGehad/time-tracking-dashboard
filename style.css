@@ -146,7 +146,7 @@ body {
 }
 .card .info .hours div {
   color: hsl(236, 100%, 87%);
-  font-size: 50px;
+  font-size: 35px;
   margin-top: 20px;
 }
 .card .info .hours p {
